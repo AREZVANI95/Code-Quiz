@@ -55,26 +55,20 @@ button {
 }
 
 .cards {
-    display: inline;
+    display: block;
     width: 300px;
     height: 400px;
     border-radius: 12px;
 }
 
+#pokemon {
+    transform: rotate(0deg) translateY(0px);
+}
+
 #yugioh {
-    background-image: url(./img/yugioh\ back.jpg);
     transform: rotate(30deg) translateY(50px);
-    z-index: auto;
 }
 
 #magic {
-    background-image: url(./img/Mtg\ back.jpg);
     transform: rotate(-30deg) translateY(50px);
-    z-index: auto;
-}
-
-#pokemon {
-    background-image: url(./img/pokemon\ back.jpg);
-    transform: rotate(-1deg);
-    z-index: auto;
 }
