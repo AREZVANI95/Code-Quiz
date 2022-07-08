@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
