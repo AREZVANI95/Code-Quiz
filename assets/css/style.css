@@ -2,31 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html {
     background-color: blanchedalmond;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Nova Cut', cursive;
 }
 
 h3 {
-    display: flex;
-    justify-content: center;
     text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Nova slim';
 }
 
-#pop-quiz {
-    text-align: center;
-}
-
-.btn {
+.btn-main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-button {
+.btn-main button {
     display: block;
     padding: 10px 15px;
     margin-right: 15px;
@@ -39,8 +40,8 @@ button {
     border-image-source: linear-gradient(60deg, #6e7bc4, #b98a5f);
 }
 
-.btn button:hover,
-.btn button:active {
+.btn-main button:hover,
+.btn-main button:active {
     color: #ED9C40;
     background: #070707;
     transition: color 0.7s;
@@ -49,12 +50,6 @@ button {
     cursor: pointer;
     transition: transform 150ms;
     transform: scale(1.03);
-}
-.centered {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .sleeve {
@@ -66,7 +61,6 @@ button {
     overflow: hidden;
     margin: 30px 80px 30px 80px;
 }
-
 
 .sleeve:hover img {
     opacity: 0;
@@ -88,4 +82,41 @@ img.card {
 
 .sleeve:hover img.card:hover {
     opacity: 1;
+}
+
+#user-question {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.question-box {
+    display: flex;
+    margin-left: 600px;
+    margin-bottom: 15px;
+    width: 10%;
+    border-radius: 10px;
+    background: #40A4ED;
+    color: white;
+    font-size: 18px;
+    min-width: 30%;
+}
+
+.question-box:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 0 #407AED;
+    transform: scale(1.2);
+    transform: transform 100ms;
+}
+
+.choice-letter {
+    padding: 5%;
+    color: black;
+}
+
+.choice-text {
+    text-align: start;
+    padding: 5%;
+    width: 100%;
 }
