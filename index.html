@@ -13,40 +13,44 @@
 </head>
 
 <body>
-    <div class="sleeve">
-        <img src="assets/css/img/Mtg back.jpg">
-        <img class="card" src="assets/css/img/Orvar.jpg">
+    <div id="container">
+        <div class="sleeve">
+            <img src="assets/css/img/Mtg back.jpg">
+            <img class="card" src="assets/css/img/Orvar.jpg">
+        </div>
+        <div class="sleeve">
+            <img src="assets/css/img/pokemon back.jpg">
+            <img class="card" src="assets/css/img/Charizard.jpeg">
+        </div>
+        <div class="sleeve">
+            <img src="assets/css/img/yugioh back.jpg">
+            <img class="card" src="assets/css/img/DarkMagician.jpg">
+        </div>
+        <div class="sleeve">
+            <img src="assets/css/img/Vanguard back.jpg">
+            <img class="card" src="assets/css/img/Blaster Blade.jpg">
+        </div>
     </div>
-    <div class="sleeve">
-        <img src="assets/css/img/pokemon back.jpg">
-        <img class="card" src="assets/css/img/Charizard.jpeg">
-    </div>
-    <div class="sleeve">
-        <img src="assets/css/img/yugioh back.jpg">
-        <img class="card" src="assets/css/img/DarkMagician.jpg">
-    </div>
-    <div class="sleeve">
-        <img src="assets/css/img/Vanguard back.jpg">
-        <img class="card" src="assets/css/img/Blaster Blade.jpg">
-    </div>
-
     <h1>Test Your TCG Knowledge!</h1>
+
     <h3>Try to answer the following TCG-related questions within the time limit.<br>
         keep in mind that incorrect answers will penalize your score/time<br>
         by ten seconds!
     </h3>
+    
+    <h5 id="timer"></h5>
 
     <div id="pop-quiz">
 
         <div id="user-question">What is the Answer to this question?</div>
 
-        <button class="question-box" id="answer1">&nbsp; Choice 1</button>
-        <button class="question-box" id="answer2">&nbsp; Choice 2</button>
-        <button class="question-box" id="answer3">&nbsp; Choice 3</button>
-        <button class="question-box" id="answer4">&nbsp; Choice 4</button>
-        
+        <button class="question-box" id="questionbox1">&nbsp; Choice 1</button>
+        <button class="question-box" id="questionbox2">&nbsp; Choice 2</button>
+        <button class="question-box" id="questionbox3">&nbsp; Choice 3</button>
+        <button class="question-box" id="questionbox4">&nbsp; Choice 4</button>
 
-    <!--    <div id="question-box">
+
+        <!--    <div id="question-box">
             <p class="choice-letter">A.</p>
             <p class="choice-text" data-number="1">Choice 1</p>
         </div>
@@ -73,10 +77,10 @@
 
     </div>-->
 
-    <div class="btn-main">
-        <button id="start-btn">Start Quiz</button>
-        <button id="score-btn">High Scores</button>
-    </div>
+        <div class="btn-main">
+            <button id="start-btn">Start Quiz</button>
+            <button id="score-btn">High Scores</button>
+        </div>
 
 </body>
 <script src="assets/js/script.js"></script>

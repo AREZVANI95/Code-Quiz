@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
@@ -19,6 +18,10 @@ h3 {
     text-align: center;
     margin-bottom: 10px;
     font-family: 'Nova slim';
+}
+
+.container {
+    max-width: 100%;
 }
 
 .btn-main {
@@ -42,7 +45,7 @@ h3 {
 
 .btn-main button:hover,
 .btn-main button:active {
-    color: #ED9C40;
+    color: blanchedalmond;
     background: #070707;
     transition: color 0.7s;
     transition: background 0.7s;
@@ -95,12 +98,12 @@ img.card {
     display: flex;
     margin-left: 600px;
     margin-bottom: 15px;
-    width: 10%;
+    max-width: 10%;
     border-radius: 10px;
     background: #40A4ED;
     color: white;
     font-size: 18px;
-    min-width: 30%;
+    min-width: 35%;
 }
 
 .question-box:hover {
