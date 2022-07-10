@@ -12,14 +12,10 @@ var answer4Btn = document.getElementById('questionbox4')
 
 //Time for the quiz
 var countdown = document.querySelector('#timer')
-var timer = 60;
-
-
-//Initialize the display timer at default value
-htmltimer.textContent = timer;
+var time = 60;
+countdown.textContent = "Time Left " + time;
 
 //Asks the questions to the user
-
 var questions = [{
         title: "What is the CMC of Orvar, The All-Form?",
         choices: ["4", "5", "4.5", "5.5"],
