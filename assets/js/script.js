@@ -2,13 +2,20 @@
 var startButton = document.getElementById('start-btn')
 // Button to check scores
 var scoreButton = document.getElementById('score-btn')
-// Button's for the Question
+// Variable for questions displayed to the user
 var questionPrompt = document.getElementById('user-question')
+// Variable for question container
+var quizContainer = document.getElementById('pop-quiz')
+//Variable for text prompt for the user
+var hideText = document.getElementById('prompt')
 // Button's for the answers
 var answer1Btn = document.getElementById('questionbox1')
 var answer2Btn = document.getElementById('questionbox2')
 var answer3Btn = document.getElementById('questionbox3')
 var answer4Btn = document.getElementById('questionbox4')
+
+//Question Buttons will be hidden from the user.
+quizContainer.setAttribute("style", "display: none");
 
 //Time for the quiz
 var countdown = document.querySelector('#timer')
@@ -41,6 +48,16 @@ var questions = [{
     }
 ]
 
+function startQuiz() {
+
+    // Will hide text form user
+    hideText.setAttribute("style", "display: none");
+    // Will show questions to user
+    quizContainer.setAttribute("style", "display: true");
+};
+
+// Starts The Pop-Quiz
+startButton.addEventListener("click", startQuiz)
 /* 
 var askQuestion = {
     correct: {
