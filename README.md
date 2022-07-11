@@ -17,4 +17,4 @@ thank you for your patience.
 ![In-Progress](assets/css/img/Quiz-in-progress.PNG)
 
 ## Web Links
-[Password-Generator](https://arezvani95.github.io/Code-Quiz/)
+[TCG-Quiz](https://arezvani95.github.io/Code-Quiz/)
