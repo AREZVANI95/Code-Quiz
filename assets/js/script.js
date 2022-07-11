@@ -50,10 +50,21 @@ var questions = [{
 
 function startQuiz() {
 
-    // Will hide text form user
+    // Will hide  user
     hideText.setAttribute("style", "display: none");
+    startButton.setAttribute("style", "display: none");
+    scoreButton.setAttribute("style", "display: none");
+
     // Will show questions to user
     quizContainer.setAttribute("style", "display: true");
+
+    var questionBag = 0;
+
+    questionPrompt.textContent = questions[questionBag].title;
+    answer1Btn.textContent = questions[questionBag].choices[0];
+    answer2Btn.textContent = questions[questionBag].choices[1];
+    answer3Btn.textContent = questions[questionBag].choices[2];
+    answer4Btn.textContent = questions[questionBag].choices[3];
 };
 
 // Starts The Pop-Quiz

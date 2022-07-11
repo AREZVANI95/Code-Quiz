@@ -108,12 +108,13 @@ img.card {
     display: flex;
     margin-left: 600px;
     margin-bottom: 15px;
+    padding-left: 10px;
     max-width: 10%;
     border-radius: 10px;
     background: #40A4ED;
     color: white;
     font-size: 18px;
-    min-width: 35%;
+    min-width: 15%;
 }
 
 .question-box:hover {
