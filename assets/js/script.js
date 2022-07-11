@@ -58,13 +58,35 @@ function startQuiz() {
     // Will show questions to user
     quizContainer.setAttribute("style", "display: true");
 
+    //Question will start at the first question in the array.
     var questionBag = 0;
 
-    questionPrompt.textContent = questions[questionBag].title;
-    answer1Btn.textContent = questions[questionBag].choices[0];
-    answer2Btn.textContent = questions[questionBag].choices[1];
-    answer3Btn.textContent = questions[questionBag].choices[2];
-    answer4Btn.textContent = questions[questionBag].choices[3];
+    //Pop-Quiz Begins
+    questionPrompt.textContent = questions[questionBag].title; //Title of the Question
+    answer1Btn.textContent = questions[questionBag].choices[0]; // first Choice
+    answer2Btn.textContent = questions[questionBag].choices[1]; // Second Choice
+    answer3Btn.textContent = questions[questionBag].choices[2]; // Third Choice
+    answer4Btn.textContent = questions[questionBag].choices[3]; // fourth Choice
+
+    //Making Function to go through the remaining questions
+    function Continue() {
+        //Writing a if statement to check for the remaining questions.
+        if (questionBag >= 0) {
+            if (questionBag === 4) {
+                quizContainer.setAttribute("style, display:none");
+            } else {
+                questionBag++
+                questionPrompt.textContent = questions[questionBag].title; //Title of the Question
+                answer1Btn.textContent = questions[questionBag].choices[0]; // first Choice
+                answer2Btn.textContent = questions[questionBag].choices[1]; // Second Choice
+                answer3Btn.textContent = questions[questionBag].choices[2]; // Third Choice
+                answer4Btn.textContent = questions[questionBag].choices[3]; // fourth Choice
+            }
+        }
+    }
+
+
+
 };
 
 // Starts The Pop-Quiz
