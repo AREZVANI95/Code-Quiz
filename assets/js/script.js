@@ -13,6 +13,11 @@ var answer1Btn = document.getElementById('questionbox1')
 var answer2Btn = document.getElementById('questionbox2')
 var answer3Btn = document.getElementById('questionbox3')
 var answer4Btn = document.getElementById('questionbox4')
+// Button's for the next questions
+var quest1Btn = document.getElementById('questionbox1')
+var quest2Btn = document.getElementById('questionbox2')
+var quest3Btn = document.getElementById('questionbox3')
+var quest4Btn = document.getElementById('questionbox4')
 
 //Question Buttons will be hidden from the user.
 quizContainer.setAttribute("style", "display: none");
@@ -84,7 +89,13 @@ function startQuiz() {
             }
         }
     }
+    // Event that will move the user forwards as he chooses the right or wrong answer.
+    quest1Btn.addEventListener("click", Continue);
+    quest2Btn.addEventListener("click", Continue);
+    quest3Btn.addEventListener("click", Continue);
+    quest4Btn.addEventListener("click", Continue);
 
+    //function to make the quiz timer countdown as the user takes the quiz
     var timeCountdown = setInterval(function () {
         if (time >= 1) {
             time--;
@@ -99,44 +110,10 @@ function startQuiz() {
             scoreButton.setAttribute("style", "display: true");
             alert("Times Is Up!")
             clearInterval(timeCountdown);
+            setTimeout("location.reload(true);", 500);
         }
     }, 1000);
 
+}
 // Starts The Pop-Quiz
 startButton.addEventListener("click", startQuiz)
-/* 
-var askQuestion = {
-    correct: {
-        0: "What is the CMC of Orvar, The All-Form?",
-        1: "How much less damage base set Charizard take from fighting moves?",
-        2: "How many tributes does the Dark Magician need to tribute summon him?",
-        3: "What is Blaster Blade's grade and clan?",
-    }
-};
-
-var questionAnswers = {
-    answer: {
-        
-        0 : {
-            0: "4",
-            1: "5",
-            2: "4.5",
-            3: "5.5"},
-        1 : {
-            0: "-20",
-            1: "-30",
-            2: "30",
-            3: "20"},
-        2 : {
-            0: "0",
-            1: "1",
-            2: "2",
-            3: "4"},
-        3 : {
-            0: "Grade 2 - Royal Paladin",
-            1: "Grade 3 - Royal Paladin",
-            2: "Grade 1 - Shadow Paladin",
-            3: "Grade 2 - Gold Paladin"},
-    }
-} 
-*/
