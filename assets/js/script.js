@@ -20,7 +20,7 @@ quizContainer.setAttribute("style", "display: none");
 //Time for the quiz
 var countdown = document.querySelector('#timer')
 var time = 60;
-countdown.textContent = "Time Left " + time;
+countdown.textContent = "Start Time " + time;
 
 //Asks the questions to the user
 var questions = [{
@@ -85,9 +85,22 @@ function startQuiz() {
         }
     }
 
-
-
-};
+    var timeCountdown = setInterval(function () {
+        if (time >= 1) {
+            time--;
+            countdown.textContent = "Time Left " + time;
+        } else if (time === 0) {
+            questionPrompt.setAttribute("style", "display: none");
+            answer1Btn.setAttribute("style", "display: none");
+            answer2Btn.setAttribute("style", "display: none");
+            answer3Btn.setAttribute("style", "display: none");
+            answer4Btn.setAttribute("style", "display: none");
+            startButton.setAttribute("style", "display: true");
+            scoreButton.setAttribute("style", "display: true");
+            alert("Times Is Up!")
+            clearInterval(timeCountdown);
+        }
+    }, 1000);
 
 // Starts The Pop-Quiz
 startButton.addEventListener("click", startQuiz)
