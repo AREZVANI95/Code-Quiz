@@ -123,14 +123,3 @@ img.card {
     transform: scale(1.2);
     transform: transform 100ms;
 }
-
-.choice-letter {
-    padding: 5%;
-    color: black;
-}
-
-.choice-text {
-    text-align: start;
-    padding: 5%;
-    width: 100%;
-}
